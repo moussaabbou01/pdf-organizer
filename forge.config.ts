@@ -10,9 +10,13 @@ const config: ForgeConfig = {
     icon: './resources/icon',
     asar: true,
     win32metadata: {
-      CompanyName: 'PDF Organizer',
+      CompanyName: 'Moussa Abbou',
       ProductName: 'PDF Organizer',
-      FileDescription: 'Organize and merge PDF documents with drag-and-drop'
+      FileDescription: 'Free desktop PDF organizer - Merge, reorder, and edit PDFs',
+      FileVersion: '1.0.0',
+      ProductVersion: '1.0.0',
+      InternalName: 'PDF Organizer',
+      OriginalFilename: 'pdf-organizer.exe'
     }
   },
   rebuildConfig: {},

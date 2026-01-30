@@ -1,9 +1,31 @@
 {
   "name": "pdf-organizer",
   "version": "1.0.0",
-  "description": "Desktop PDF Organizer - Combine, reorder, and edit PDF pages with drag-and-drop",
+  "description": "A free desktop PDF organizer for Windows. Combine, reorder, rotate, and manage PDF pages with drag-and-drop. No subscriptions, no limits.",
   "main": ".vite/build/main.js",
-  "author": "Your Name",
+  "author": {
+    "name": "Moussa Abbou",
+    "url": "https://github.com/moussaabbou01"
+  },
+  "homepage": "https://github.com/moussaabbou01/pdf-organizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moussaabbou01/pdf-organizer.git"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-organizer",
+    "pdf-merger",
+    "pdf-editor",
+    "electron",
+    "desktop-app",
+    "windows",
+    "drag-and-drop",
+    "typescript",
+    "react",
+    "free",
+    "open-source"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "electron-forge start",
