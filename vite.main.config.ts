@@ -15,8 +15,17 @@ export default defineConfig({
       fileName: () => 'main.js'
     },
     rollupOptions: {
-      external: ['electron', 'electron-store', 'path', 'fs', 'fs/promises', 'crypto']
+      external: [
+        'electron',
+        // Node.js built-in modules
+        'path', 'fs', 'fs/promises', 'crypto', 'os', 'url', 'util', 'assert', 'events',
+        'stream', 'buffer', 'http', 'https', 'net', 'tls', 'child_process'
+      ]
     },
-    minify: false
+    minify: false,
+    target: 'node18',
+    commonjsOptions: {
+      ignoreDynamicRequires: true
+    }
   }
 });
