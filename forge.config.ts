@@ -13,8 +13,6 @@ const config: ForgeConfig = {
       CompanyName: 'Moussaab boutelis',
       ProductName: 'PDF Organizer',
       FileDescription: 'Free desktop PDF organizer - Merge, reorder, and edit PDFs',
-      FileVersion: '1.0.0',
-      ProductVersion: '1.0.0',
       InternalName: 'PDF Organizer',
       OriginalFilename: 'pdf-organizer.exe'
     }
