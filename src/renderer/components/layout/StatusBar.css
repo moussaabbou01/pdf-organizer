@@ -1,0 +1,30 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  padding: 0 var(--spacing-md);
+  background-color: var(--color-accent);
+  color: white;
+  font-size: var(--font-size-xs);
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.status-item--highlight {
+  font-weight: 600;
+}
+
+.status-item--warning {
+  color: var(--color-warning);
+}

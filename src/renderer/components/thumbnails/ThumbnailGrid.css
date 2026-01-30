@@ -1,0 +1,8 @@
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--thumbnail-base-width) * var(--zoom, 1)), 1fr));
+  gap: var(--thumbnail-gap);
+  padding: var(--spacing-lg);
+  justify-content: center;
+  min-height: 100%;
+}

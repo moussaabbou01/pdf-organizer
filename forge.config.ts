@@ -1,0 +1,48 @@
+import type { ForgeConfig } from '@electron-forge/shared-types';
+import { MakerSquirrel } from '@electron-forge/maker-squirrel';
+import { MakerZIP } from '@electron-forge/maker-zip';
+import { VitePlugin } from '@electron-forge/plugin-vite';
+
+const config: ForgeConfig = {
+  packagerConfig: {
+    name: 'PDF Organizer',
+    executableName: 'pdf-organizer',
+    icon: './resources/icon',
+    asar: true,
+    win32metadata: {
+      CompanyName: 'PDF Organizer',
+      ProductName: 'PDF Organizer',
+      FileDescription: 'Organize and merge PDF documents with drag-and-drop'
+    }
+  },
+  rebuildConfig: {},
+  makers: [
+    new MakerSquirrel({
+      name: 'pdf_organizer',
+      setupIcon: './resources/icon.ico',
+    }),
+    new MakerZIP({}, ['win32', 'darwin', 'linux'])
+  ],
+  plugins: [
+    new VitePlugin({
+      build: [
+        {
+          entry: 'src/main/index.ts',
+          config: 'vite.main.config.ts',
+        },
+        {
+          entry: 'src/preload/index.ts',
+          config: 'vite.preload.config.ts',
+        }
+      ],
+      renderer: [
+        {
+          name: 'main_window',
+          config: 'vite.renderer.config.ts',
+        }
+      ]
+    })
+  ]
+};
+
+export default config;
