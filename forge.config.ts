@@ -7,10 +7,10 @@ const config: ForgeConfig = {
   packagerConfig: {
     name: 'PDF Organizer',
     executableName: 'pdf-organizer',
-    icon: './resources/icon',
+
     asar: true,
     win32metadata: {
-      CompanyName: 'Moussa Abbou',
+      CompanyName: 'Moussaab boutelis',
       ProductName: 'PDF Organizer',
       FileDescription: 'Free desktop PDF organizer - Merge, reorder, and edit PDFs',
       FileVersion: '1.0.0',
@@ -22,8 +22,7 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({
-      name: 'pdf_organizer',
-      setupIcon: './resources/icon.ico',
+      name: 'pdf_organizer'
     }),
     new MakerZIP({}, ['win32', 'darwin', 'linux'])
   ],
